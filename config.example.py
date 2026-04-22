@@ -7,22 +7,20 @@
 # 3. Збережи файл
 # ============================================
 
-# ---------- ТОКЕН БОТА (ОТРИМАТИ В @BotFather) ----------
+# ---------- ТОКЕН БОТА ----------
 BOT_TOKEN = "ВАШ_ТОКЕН_БОТА"
 
-# ---------- НОМЕРИ КАРТОК ДЛЯ ДОНАТІВ ----------
-MONOBANK_CARD = "4441 1111 1111 1111"     # Заміни на свою картку Monobank
-PRIVAT_CARD = "5168 1111 1111 1111"      # Заміни на свою картку ПриватБанку
+# ---------- НОМЕРИ КАРТОК ----------
+MONOBANK_CARD = "4441 1111 1111 1111"
+PRIVAT_CARD = "5168 1111 1111 1111"
 
 # ---------- ПОСИЛАННЯ НА ДОНАТИ ----------
 DONATELLO_URL = "https://www.donationalerts.com/r/your_username"
 
-# ---------- ID АДМІНА (ТВІЙ TELEGRAM ID) ----------
-# Як дізнатись: написати @userinfobot → /start
+# ---------- ID АДМІНА ----------
 ADMIN_ID = 123456789
 
 # ---------- БОНУСИ ЗА ДОНАТИ ----------
-# Формат: сума_в_гривнях: {"tokens": кількість, "premium_days": дні}
 DONATION_BONUSES = {
     50: {"tokens": 30, "premium_days": 0},
     100: {"tokens": 80, "premium_days": 3},
@@ -31,8 +29,8 @@ DONATION_BONUSES = {
     1000: {"tokens": 1500, "premium_days": 90}
 }
 
-# ---------- TELEGRAM STARS (ПОКИ НЕ ДОСТУПНО В УКРАЇНІ) ----------
-STARS_ENABLED = False  # Постав True, коли Stars з'являться
+# ---------- TELEGRAM STARS ----------
+STARS_ENABLED = False
 
 STARS_PACKS = {
     25: {"tokens": 30, "stars": 25},
@@ -43,9 +41,9 @@ STARS_PACKS = {
 }
 
 # ---------- ЦІНИ В ТОКЕНАХ ----------
-SUPER_LIKE_PRICE = 10      # Супер-лайк
-BOOST_PRICE = 50           # Підняття анкети
-EXTEND_CHAT_PRICE = 25     # Продовження чату
+SUPER_LIKE_PRICE = 10
+BOOST_PRICE = 50
+EXTEND_CHAT_PRICE = 25
 
 # ---------- ПОДАРУНКИ ----------
 GIFTS = {
@@ -56,6 +54,6 @@ GIFTS = {
     "🎂": {"name": "Торт", "price": 25}
 }
 
-# ---------- ЛІМІТИ ДЛЯ БЕЗКОШТОВНИХ ----------
-FREE_DAILY_LIKES = 20      # Безкоштовних лайків на день
-FREE_DAILY_CHATS = 5       # Безкоштовних чатів на день
+# ---------- ЛІМІТИ ----------
+FREE_DAILY_LIKES = 20
+FREE_DAILY_CHATS = 5
