@@ -5,7 +5,7 @@ from contextlib import contextmanager
 
 @contextmanager
 def get_db():
-    conn = sqlite3.connect("incognito_love.db", timeout=10)
+    conn = sqlite3.connect("inkognito_love.db", timeout=10)
     conn.row_factory = sqlite3.Row
     try:
         yield conn
@@ -73,5 +73,11 @@ def init_db():
                     status TEXT DEFAULT 'pending',
                     created_at INTEGER,
                     processed_at INTEGER)''')
+        
+        # Реферали (НОВА ТАБЛИЦЯ)
+        conn.execute('''CREATE TABLE IF NOT EXISTS referrals 
+                   (user_id INTEGER PRIMARY KEY,
+                    invited_by INTEGER,
+                    invited_at INTEGER)''')
         
         print("✅ База даних готова")
